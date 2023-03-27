@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "d6742eff-41c2-4cd5-a25c-a12be052178e",
+		"name": "customerlabs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"gowsikan@email.com\",\r\n  \"accountId\": \"89435\",\r\n  \"accountName\": \"Mycuadvsfdnt\",\r\n  \"website\": \"https://example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update account",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"exddsdsfe@email.com\",\r\n  \"accountId\": \"6578332\",\r\n  \"accountName\": \"Mycuadvsfdnt\",\r\n  \"website\": \"https://example.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/6578332",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"6578332"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get account by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/89435",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"89435"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete account by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/1234567890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"1234567890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get destination by accountid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/accounts/6578332/destinations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"6578332",
+						"destinations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create destination by accountId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://google.com\",\r\n  \"httpMethod\": \"POST\",\r\n  \"headers\": {\r\n    \"Authorization\": \"4e9e3cd0-e1fa-4e55-8ae3-45ae04d4116f\",\r\n    \"Content-Type\": \"application/json\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/89435/destinations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"89435",
+						"destinations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get destination by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://example.com\",\r\n  \"httpMethod\": \"POST\",\r\n  \"headers\": {\r\n    \"Authorization\": \" 933dfbd9-3a2a-4d52-b2f8-5c15488a9111\",\r\n    \"Content-Type\": \"application/json\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/89435/destinations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"89435",
+						"destinations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete destina",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://example.com\",\r\n  \"httpMethod\": \"POST\",\r\n  \"headers\": {\r\n    \"Authorization\": \" 933dfbd9-3a2a-4d52-b2f8-5c15488a9111\",\r\n    \"Content-Type\": \"application/json\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/9487799/destinations/6804",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"9487799",
+						"destinations",
+						"6804"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete destina Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "cl-x-token",
+						"value": "933dfbd9-3a2a-4d52-b2f8-5c15488a9111",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"url\": \"https://google.com\",\r\n  \"httpMethod\": \"POST\",\r\n  \"headers\": {\r\n    \"Authorization\": \"4e9e3cd0-e1fa-4e55-8ae3-45ae04d4116f\",\r\n    \"Content-Type\": \"application/json\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/accounts/89435/destinations/6806",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"89435",
+						"destinations",
+						"6806"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incoming_data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "cl-x-token",
+						"value": "4e9e3cd0-e1fa-4e55-8ae3-45ae04d4116f",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/server/incoming_data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"server",
+						"incoming_data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
